@@ -93,6 +93,13 @@ const Dashboard = () => {
 
             {/* MAIN */}
             <main className="dash-main-content">
+                {/* Mobile Header (Visible only on small screens) */}
+                <div className="dash-mobile-header" style={{ display: 'none' }}>
+                    <div className="dash-mobile-logo">
+                        🚀 SkillPath <span>AI</span>
+                    </div>
+                </div>
+
                 <header className="dash-topbar">
                     <div className="dash-greeting">
                         <h1>Welcome back, <span>{user?.name?.split(' ')[0]}</span> 👋</h1>
